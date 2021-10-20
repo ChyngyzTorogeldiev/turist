@@ -7,8 +7,8 @@ class Place(models.Model):
         to=User, 
         on_delete=models.SET_NULL,
         null=True,
-        blank=True
-        )
+        blank=True,
+    )
     name = models.CharField(max_length=255)
     location = models.CharField(max_length=255)
     description = models.TextField(null=True, blank=True)
